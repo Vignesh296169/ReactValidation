@@ -1,0 +1,11 @@
+.design{
+display: flex;
+justify-content: center; 
+line-height: 2;
+}
+.text{
+    display: block;
+}
+.password{
+    display: block;
+}
