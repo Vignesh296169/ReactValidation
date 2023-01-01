@@ -8,7 +8,7 @@
   margin-top: 10px;
    
    animation: card 5s infinite;
-   box-shadow:  2px 1px 5px white;
+   box-shadow:  2px 1px 5px 2px white;
   
 }
 @keyframes card{
