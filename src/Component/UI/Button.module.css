@@ -1,0 +1,13 @@
+.button{
+    
+    background-color: rgb(185, 137, 231);
+    border-radius: 1rem;
+    box-shadow: 2rem  white;
+    
+}
+
+.button:active{
+    background-color: rgb(100, 6, 119);
+    border-style: none;
+    color: azure;
+}
