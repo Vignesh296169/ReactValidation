@@ -57,7 +57,9 @@ const[iserror ,seterror]=useState(true)
      <p style={{color:"red",fontSize:"15px"}}>{inialert}</p>
 
       </form>
-    </Card></>
+
+    </Card>
+    </>
   );
 }
 
