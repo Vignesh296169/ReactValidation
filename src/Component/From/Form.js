@@ -33,12 +33,15 @@ const[iserror ,seterror]=useState(true)
       console.log(enteredtext,enteredpassword)
       setpassword('')
       settext('')
+      setalert('')
   }
 
   const [inialert,setalert]=useState('')
   const alertHandler=()=>{
-     
-  
+     if(enteredtext.length===0){
+        setalert("Enter username first :")
+     }
+    
     }
   
   
@@ -47,11 +50,12 @@ const[iserror ,seterror]=useState(true)
     <Card className={styles.design}>
   <form onSubmit={preventHandler}>
         <label style={{color:!isvalid && "red"}} htmlFor="username">Username:</label>
-          <p style={{color:"red"}}>{inialert}</p>
         <input value={enteredtext} onChange={textHandler} className={styles.text} id="username" type='text'/>
         <label style={{color:!iserror ? "red":"black"}} htmlFor="userPassword">password:</label>
-       <input  value={enteredpassword} onChange={passwordHandler} className={styles.password} id="userPassword" type='password'/>
+       <input placeholder="Max 9 character" value={enteredpassword} onChange={passwordHandler} className={styles.password} id="userPassword" type='password'/>
         <Button onClick={alertHandler} >Submit</Button>
+     <p style={{color:"red",fontSize:"15px"}}>{inialert}</p>
+
       </form>
     </Card></>
   );
