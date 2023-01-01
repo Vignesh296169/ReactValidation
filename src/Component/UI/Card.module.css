@@ -11,13 +11,10 @@
   
 }
 @keyframes card{
-  50%{
+  100%{
     background-color: rgb(158, 240, 212);
     color: rgb(12, 12, 61);
 
   }
-  100%{
-    background-color: rgb(113, 235, 113);
-   
-  }
+  
 }
