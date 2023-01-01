@@ -5,7 +5,9 @@ line-height: 2;
 }
 .text{
     display: block;
+    border-radius: 10px;
 }
 .password{
     display: block;
+    border-radius: 10px;
 }
